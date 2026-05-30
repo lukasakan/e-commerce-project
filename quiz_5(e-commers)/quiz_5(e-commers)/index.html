@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-title">
+        <img class="menu-icon" src="assets/icon-menu.svg" alt="Menu" />
+        <h1>Sneakers</h1>
+        <div class="menu-links">
+          <a href="#"class="nav-link">Collections</a>
+          <a href="#" class="nav-link">Men</a>
+          <a href="#" class="nav-link">Women</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+        </div>
+      </div>
+
+
+
+      <div class="nav-menu">
+        <img class="close-icon" src="assets/icon-close.svg" alt="Close" />
+        <div class="nav-links">
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="cart-profile">
+        <div class="cart-container">
+          <p id="badge">0</p>
+          <button id="cart">
+            <img class="cart-icon" src="assets/icon-cart.svg" alt="Cart" />
+          </button>
+        </div>
+
+        <img
+          class="profile"
+          src="assets/image-avatar.png"
+          alt="Profile picture"
+        />
+      </div>
+      <div id="cart-dropdown" class="cart-dropdown">
+        <h2 class="cart-title">Cart</h2>
+        <hr />
+        <div id="cart-content" class="cart-content">
+           <div class="cart-item">
+                <img
+                  class="cart-item-image"
+                  src="assets/image-product-1-thumbnail.jpg"
+                  alt="Cart item image"
+                />
+            <div class="cart-item-details">
+              <p class="cart-item-name">Fall Limited Edition Sneakers</p>
+              <p class="cart-item-price">
+                    $125.00 x <span id="cart-item-quantity">1</span> <span id="price" class="cart-item-total">$125.00</span>
+              </p>
+              </div>
+              <button class="btn-delete">
+                  <img src="assets/icon-delete.svg" alt="Delete" />
+              </button>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+        <div id="empty" class="empty-cart-container">
+          <p class="empty-cart">Your cart is empty.</p>
+        </div>
+      </div>
+    </header>
+    <hr>
+    <main>
+      
+      <div class="product-vis">
+        <div class="product-image-container">
+          <button id="main-image">
+            <img id="main-image-content"
+              class="product-image"
+              src="assets/image-product-1.jpg"
+              alt="Product image"
+            />
+          </button>
+          <div class="product-arrows">
+            <button id="btn-previous" class="btn-previous">
+              <img src="assets/icon-previous.svg" alt="Previous" />
+            </button>
+
+            <button id="btn-next" class="btn-next">
+              <img src="assets/icon-next.svg" alt="Next" />
+            </button>
+          </div>
+        </div>
+          <div class="product-thumbnails">
+            <button id="thumbnail1"><img
+              class="thumbnail"
+              src="assets/image-product-1-thumbnail.jpg"
+              alt="Product thumbnail 1"
+            />
+            </button>
+            <button id="thumbnail2">
+              <img
+                class="thumbnail"
+                src="assets/image-product-2-thumbnail.jpg"
+                alt="Product thumbnail 2"
+              />
+            </button>
+            <button id="thumbnail3">
+              <img
+                class="thumbnail"
+                src="assets/image-product-3-thumbnail.jpg"
+                alt="Product thumbnail 3"
+              />
+            </button>
+            <button id="thumbnail4">
+              <img
+                class="thumbnail"
+                src="assets/image-product-4-thumbnail.jpg"
+                alt="Product thumbnail 4"
+              />
+            </button>
+        </div>
+      </div>
+      <div class="product-details-btn">
+        <div class="product-details">
+          <h2 class="product-brand">Sneaker company</h2>
+          <h1 class="h1-Title">Fall Limited Edition Sneakers</h1>
+
+          <p class="product-desc">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-details">
+            <h2 class="product-price">
+              $125.00 <span class="product-discount">50%</span>
+            </h2>
+            <h3 class="og-price">$250.00</h3>
+          </div>
+        </div>
+        <div class="product-btns">
+          <div class="quantity-container">
+            <button type="button" id="-" class="btn-quantity">
+              <img src="assets/icon-minus.svg" alt="minus" />
+            </button>
+            <span id="quantity">0</span>
+            <button type="button" id="+" class="btn-quantity">
+              <img src="assets/icon-plus.svg" alt="plus" />
+            </button>
+          </div>
+          <div class="ATC">
+            <img class="cart-btn" src="assets/Vector.png" alt="Cart" />
+            <button type="button" id="batc" class="BTN">Add to cart</button>
+          </div>
+        </div>
+
+      </div>
+     <div id="hidden" class="hidden">
+       <div class="product-vis-hidden">
+          <button id="close-btn" class="close-btn">
+            <img  src="assets/icon-close.svg" alt="Close" />
+          </button>
+          <div class="product-image-container-hidden">
+            <img id="main-image-hidden"
+              class="product-image-hidden"
+              src="assets/image-product-1.jpg"
+              alt="Product image"
+            />
+            <div class="product-arrows-hidden">
+              <button id="btn-previous-hidden" class="btn-previous">
+                <img src="assets/icon-previous.svg" alt="Previous" />
+              </button>
+
+              <button id="btn-next-hidden" class="btn-next-hidden">
+                <img src="assets/icon-next.svg" alt="Next" />
+              </button>
+            </div>
+          </div>
+            <div class="product-thumbnails-hidden">
+              <button id="thumbnail1-hidden"><img
+                class="thumbnail-hidden"
+                src="assets/image-product-1-thumbnail.jpg"
+                alt="Product thumbnail 1"
+              />
+            </button>
+              <button id="thumbnail2-hidden">
+              <img
+                class="thumbnail-hidden"
+                src="assets/image-product-2-thumbnail.jpg"
+                alt="Product thumbnail 2"
+              />  
+              </button>
+              <button id="thumbnail3-hidden">
+              <img
+                class="thumbnail-hidden"
+                src="assets/image-product-3-thumbnail.jpg"
+                alt="Product thumbnail 3"
+              />
+              </button>
+              <button id="thumbnail4-hidden">
+              <img
+                class="thumbnail-hidden"
+                src="assets/image-product-4-thumbnail.jpg"
+                alt="Product thumbnail 4"
+              />
+              </button>
+         </div>
+        </div>
+     </div>
+    </main>
+  </body>
+</html>
